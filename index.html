@@ -1,185 +1,597 @@
 <!DOCTYPE html>
-<html lang="en"dir="rtl" >
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <title>دیجی کالا</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
-<div class="container-fluid bg-light">
-  <div class="row  justify-content-evenly">
-      <div class="col-2 ">
-        <p>مرکز تماس: <a class="p-header" href="#">  ۰۲۱۹۱۰۹۳۰۰۰</a></p>
+  <!-- Start header -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-between">
+        <div class="row ">
+          <div class="col-sm-12 col-md-4 mt-3">
+            <a href="#"><img src="img/logo.svg" alt=""></a>
+          </div>
+          <div class="col-sm-12 col-md-8 mt-2">
+           <form class="d-flex" role="search">
+             <input class="form-control me-2" type="search" placeholder="جستجو" aria-label="Search">
+           </form>
+          </div>
+        </div>
+        
       </div>
-      <div class="col-2">
-        <p>پیام رسان: <a class="p-header" href="#">  ۰۹۱۰۲۲۲۵۰۹۰</a></p>
+      <div class="col-sm-12 col-md-6 d-flex justify-content-end">
+        <div class="row">
+          <div class="col-sm-12 col-md-10 mt-2">
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="col-sm-12 col-md-4 mt-3  ">
+                      <a class="" href="#"><img src="img/logo.svg"  class="d-flex align-items-center" alt=""></a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>ورود | ثبت نام</p>
+                    <p>سلام !</p>
+                    <p>لطفا شماره موبایل یا ایمیل خود را وارد نمایید </p> 
+                    <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                    <p class="fs-6 text-danger">لطفا این قسمت را خالی نگذارید</p>
+                  </div>
+                  <div class=" d-grid gap-2 col-11 mx-auto">
+                    <button class="btn btn-danger" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">ورود</button>
+                  </div>
+                  <p class="text-center fs-6 py-3">ورود شما به معنای پذیرش شرایط دیجی‌کالا و قوانین حریم‌ خصوصی است</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Hide this modal and show the first with the button below.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-light"  data-bs-target="#exampleModalToggle"  data-bs-toggle="modal" ><i class="fa fa-sign-in " aria-hidden="true"></i>
+              ورود | ثبت نام</button>
+           </div>
+           <div class="col-sm-12 col-md-1 mt-3">
+             <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+           </div>
+        </div>
+       
       </div>
+      
+      
+    </div>
   </div>
-</div>
-
-<!-- start menu -->
-<nav class="navbar navbar-expand-lg bg-white sticky-top">
+   <!-- End header -->
+   <!-- Start menu -->
+   <div class="container-fluid">
+    <div class="row d-flex justify-content-between">
+      <div class="col-sm-12 col-md-8">
+       <nav class="navbar navbar-expand-lg ">
+         <div class="container-fluid">
+           
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNavDropdown">
+             <ul class="navbar-nav">
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bars" aria-hidden="true"></i>دسته بندی کالاها
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Action</a></li>
+                   <li><a class="dropdown-item" href="#">Another action</a></li>
+                   <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" aria-current="page" href="#">شگفت انگیز</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">سوپر مارکت</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">کارت هدیه</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" aria-current="page" href="#">پرفروش ترین ها</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">تخفیف ها و پیشنهادها</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">سوالی دارید</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">از دیجی کالا بپرسید؟</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+      </div>
+      <div class="col-sm-12 col-md-2 mt-3">
+       <a href="#">لطفا شهر خود را انتخاب نماید</a>
+      </div>
+    </div>
+  </div>
+   <!-- End menu -->
+<hr>
+  <!-- Start fishing -->
   <div class="container">
-    <div>
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.svg" alt="Bootstrap" width="50" height="44">
-      </a>
-      
-      <a class="navbar-brand" href="#">شبکه پرداخت آنلاین</a>
-    </div>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-      <form class="d-flex" role="search">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle menu-top" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                خدمات ما
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">درگاه پرداخت بدون کارمزد</a></li>
-                <li><a class="dropdown-item" href="#">درگاه پرداخت بین المللی</a></li>
-                <li><a class="dropdown-item" href="#">لینک پرداخت هدفمند</a></li>
-                <li><a class="dropdown-item" href="#">استرداد وجه(ریفاند)</a></li>
-                <li><a class="dropdown-item" href="#">ابزارهای پرداخت</a></li>
-                
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle menu-top" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                توسعه دهندگان
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">مستندات</a></li>
-                <li><a class="dropdown-item" href="#">پلاگین ها</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active menu-top" aria-current="page" href="#">تعرفه ها</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle menu-top" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                درباره ما
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">درباره شپا</a></li>
-                <li><a class="dropdown-item" href="#">تماس با ما</a></li>
-                <li><a class="dropdown-item" href="#">قوانین و مقررات</a></li>
-                <li><a class="dropdown-item" href="#">سوالات متداول</a></li>
-              </ul>
-              <li class="nav-item">
-                <a class="nav-link menu-top active" aria-current="page" href="#">بلاگ</a>
-              </li>
-            </li>
-          </ul>
-        <button class="btn btn-outline-success btn-top" type="submit">ورود/ثبت نام</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<!-- end menu -->
-<!-- start p-online -->
-<div class="container mt-5">
-  <div class="card mb-5 bg-light border-0">
-    <div class="row g-0">
-      
-      <div class="col-md-6">
-        <div class="card-body p-5">
-          <h5 class="card-title">درگاه پرداخت آنلاین بدون کارمزد</h5>
-          <p class="card-text">به شبکه پرداخت آنلاین متصل شوید! شپا، پرداخت یار رسمی شاپرک و بانک مرکزی، کاربران وب‌سایت‌ها را در هر لحظه به بهترین و امن‌ترین درگاه‌های شاپرک وصل می‌کند. درگاه پرداخت بدون کارمزد شپا، در کمتر از یک روز کاری فعال می‌شود.</p>
-          <a href="#" class="btn btn-primary">دریافت درگاه پرداخت</a>
+    <div class="row">
+      <div class="col-sm-12 d-flex justify-content-between">
+        <div class="fishing">
+          <img src="img/f1.jpg" class="img-fluid img-fluid-f " alt="">
+          <p>جایزه</p>
+        </div>
+        <div class="fishing">
+          <img src="img/f1.jpg" class="img-fluid img-fluid-f " alt="">
+          <p>جایزه</p>
+        </div>
+        <div class="fishing">
+          <img src="img/f1.jpg" class="img-fluid img-fluid-f " alt="">
+          <p>جایزه</p>
+        </div>
+        <div class="fishing">
+          <img src="img/f1.jpg" class="img-fluid img-fluid-f " alt="">
+          <p>جایزه</p>
+        </div>
+        <div class="fishing">
+          <img src="img/f1.jpg" class="img-fluid img-fluid-f " alt="">
+          <p>جایزه</p>
+        </div>
+        <div class="fishing">
+          <img src="img/f1.jpg" class="img-fluid img-fluid-f " alt="">
+          <p>جایزه</p>
+        </div>
+        <div class="fishing">
+          <img src="img/f1.jpg" class="img-fluid img-fluid-f " alt="">
+          <p>جایزه</p>
+        </div>
+        <div class="fishing">
+          <img src="img/f1.jpg" class="img-fluid img-fluid-f " alt="">
+          <p>جایزه</p>
         </div>
       </div>
-      <div class="col-md-6">
-        <img src="img/LPN-1.png" class="img-fluid rounded-start" alt="...">
+    </div>
+  </div>
+  <!-- End fishing -->
+  <!-- start carousel -->
+  <div class="container-fluid my-5">
+    <div class="row">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/c1 (1).gif" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/c1 (1).webp" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/c1 (2).webp" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/c1 (3).webp" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/c1 (4).webp" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/c1 (5).webp" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/c1 (6).webp" class="d-block w-100 img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </div>
-</div>
+  
+  <!-- End carousel -->
+  <!-- Start fishing1 -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-sm-12 d-flex justify-content-between">
+        
+        <div class="fishing">
+          <img src="img/ff1.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-center ">دیجی کالا جت</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff2.png" class="img-fluid img-fluid-f " alt="">
+          <p>دیجی پی</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff3.png" class="img-fluid img-fluid-f " alt="">
+          <p>سوپرمارکت</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff4.png" class="img-fluid img-fluid-f " alt="">
+          <p>خرید برنده</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff5.png" class="img-fluid img-fluid-f " alt="">
+          <p class="p-p">هدیه دیجی پلاس</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff6.png" class="img-fluid img-fluid-f " alt="">
+          <p>گیم نت</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff7.png" class="img-fluid img-fluid-f " alt="">
+          <p>لاکی باکس</p>
+        </div>
+        <div class="fishing">
+          <img src="img/f1.jpg" class="img-fluid img-fluid-f " alt="">
+          <p>بیشتر</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End fishing1 -->
+  <!-- Start owel -->
+  <div class="container-fluid bg-danger my-5 py-5">
+    <div class="row">
+      <div class="owl-carousel owl-theme ">
+        <a href="#">
+          <div class="owl-1 py-3">
+            <p>پیبشنهاد شگفت انگیز</p>
+            <img src="img/box.webp" class="img-fluid img-fluid-o " alt="">
+            <p class="text-center ">مشاهده همه </p>
+          </div>
+        </a>
+        
+        <div class="item bg-white  rounded">
+          <a href="">
+            <img src="img/o1.webp" alt="" class="rounded">
+            <p class="text-center">16,999,000 تومان</p>
+            <p class="badge rounded-pill text-bg-danger">6%</p>
+          </a>
+        </div>
+        <div class="item bg-white rounded">
+          <a href="">
+            <img src="img/o2.webp" alt="" class="rounded">
+            <p class="text-center">10,099,000 تومان</p>
+            <p class="badge rounded-pill text-bg-danger">4%</p>
+          </a>
+        </div>
+        <div class="item bg-white rounded">
+          <a href="">
+            <img src="img/o3.webp" alt=""class="rounded">
+            <p class="text-center">16,999,000 تومان</p>
+            <p class="badge rounded-pill text-bg-danger">6%</p>
+          </a>
+        </div>
+        <div class="item bg-white rounded">
+          <a href="">
+            <img src="img/o4.webp" alt=""class="rounded">
+            <p class="text-center">888,000 تومان</p>
+            <p class="badge rounded-pill text-bg-danger">60%</p>
+          </a>
+        </div>
+        <div class="item bg-white rounded">
+          <a href="">
+            <img src="img/o5.webp" alt=""class="rounded">
+            <p class="text-center">395,070 تومان</p>
+            <p class="badge rounded-pill text-bg-danger">76%</p>
+          </a>
+        </div>
+        <div class="item bg-white rounded">
+          <a href="">
+            <img src="img/o6.webp" alt=""class="rounded">
+            <p class="text-center">599,000 تومان</p>
+            <p class="badge rounded-pill text-bg-danger">62%</p>
+          </a>
+        </div>
+        <div class="item bg-white rounded">
+          <a href="">
+            <img src="img/o7.webp" alt=""class="rounded">
+            <p class="text-center">1,890,000 تومان</p>
+            <p class="badge rounded-pill text-bg-danger">68%</p>
+          </a>
+        </div>
+        <div class="item bg-white rounded">
+          <a href="">
+            <img src="img/o8.webp" alt=""class="rounded">
+            <p class="text-center">990,000 تومان</p>
+            <p class="badge rounded-pill text-bg-danger">60%</p>
+          </a>
+        </div>
+        
+    </div>
+    </div>
+  </div>
+  
+  <!-- End owel -->
+  <!-- Start baner1 -->
+  <div class="container-fluid baner-1 my-5 mx-1 py-3">
+    <div class="row  d-flex justify-content-between align-items-center">
+      <div class="col-sm-12 col-md-1 ">
+        <img src="img/fresh.webp" alt="" class="img-fluid" >
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <p class="text-success">شگفت انگیز سوپر مارکتی</p>
+        <span class="badge text-bg-success">تا 49درصد تخفیف</span>
+      </div>
+      <div class="col-sm-12 col-md-6  d-flex justify-content-between">
+        <div class="">
+          <a href="">
+            <img src="img/bf1.webp" alt="" class="img-fluid img-fluid-1 rounded-circle">
+            <span class="badge text-bg-danger">15%</span>
+          </a>
+        </div>
+        <div class="">
+          <a href="">
+            <img src="img/bf2.webp" alt="" class="img-fluid img-fluid-1 rounded-circle">
+            <span class="badge text-bg-danger">27%</span>
+          </a>
+        </div>
+        <div class="">
+          <a href="">
+            <img src="img/bf3.webp" alt="" class="img-fluid img-fluid-1 rounded-circle">
+            <span class="badge text-bg-danger">49%</span>
+          </a>
+        </div>
+        <div class="">
+          <a href="">
+            <img src="img/bf4.webp" alt="" class="img-fluid img-fluid-1 rounded-circle">
+            <span class="badge text-bg-danger">14%</span>
+          </a>
+        </div>
+        <div class="">
+          <a href="">
+            <img src="img/bf5.webp" alt="" class="img-fluid img-fluid-1 rounded-circle">
+            <span class="badge text-bg-danger">25%</span>
+          </a>
+        </div>
+        <div class="">
+          <a href="">
+            <img src="img/bf6.jpg" alt="" class="img-fluid img-fluid-1 rounded-circle">
+            <span class="badge text-bg-danger">27%</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-2">
+        <button type="button" class="btn btn-light">بیش از 100 کالا</button>
+      </div>
 
-<!-- end p-online -->
-<!-- start mazaya -->
+  </div>
+  </div>
+  <!-- End baner1 -->
+  <!-- Start baner1 -->
+  <div class="container-fluid baner-2 my-5 mx-1 py-3">
+    <div class="row  d-flex justify-content-between align-items-center">
+      <div class="col-sm-12 col-md-3 ">
+        <a href="">
+          <img src="img/b1.webp" alt="" class="img-fluid rounded">
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-3 ">
+        <a href="">
+          <img src="img/b2.webp" alt="" class="img-fluid rounded">
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-3 ">
+        <a href="" class="pr-3">
+          <img src="img/b3.webp" alt="" class="img-fluid rounded">
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-3 ">
+        <a href="">
+          <img src="img/b4.webp" alt="" class="img-fluid rounded">
+        </a>
+      </div>
+
+  </div>
+  </div>
+  <!-- End baner1 -->
+<!-- Start fishing3 -->
+
 <div class="container">
-  <h1>مزایای درگاه پرداخت شپا</h1>
-  <div class="row">
-    <div class="col-sm-4 mb-3 mb-sm-0">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="col">
+    <div class="row my-2 ">
+      <div class="col-sm-12  d-flex justify-content-between">
+      
+        <div class="fishing">
+          <img src="img/ff/ff1.png" class="img-fluid img-fluid-f " alt="">
+          <p  class="text-center m-0 ">موبایل</p>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="fishing">
+          <img src="img/ff/ff2.png" class="img-fluid img-fluid-f " alt="">
+          <p  class="text-start m-0 ">کالای دیجیتال</p>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-4 mb-3 mb-sm-0">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="fishing">
+          <img src="img/ff/ff3.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">خانه و آشپزخانه</p>
         </div>
+        <div class="fishing">
+          <img src="img/ff/ff4.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">مد و پوشاک</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff/ff5.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">کالاهای سوپرمارکتی</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff/ff7.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">کتاب ، لوازم النحریر و هنر</p>
+        </div>
+        <div class="fishing-3">
+          <img src="img/ff/ff6.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-center m-0 ">اسباب بازی ، کودک و نوزاد</p>
+        </div>
+        
       </div>
     </div>
   </div>
+  <div class="col">
+    <div class="row my-5">
+      <div class="col-sm-12  d-flex justify-content-around">
+      
+        <div class="fishing">
+          <img src="img/ff/ff8.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">زیبایی و سلامت</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff/ff9.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">ورزش و سفر</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff/ff10.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">ابزارآلات و تجهیزات</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff/ff11.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">خودرو و موتورسیکلت</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff/ff12.png" class="img-fluid img-fluid-f " alt="">
+          <p  class="text-start m-0 ">محصولات بومی و محلی</p>
+        </div>
+        <div class="fishing">
+          <img src="img/ff/ff13.png" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">کارت هدیه</p>
+        </div>
+        
+      </div>      
+    </div>
+  </div>
 </div>
-<!-- end mazaya -->
+<!-- End fishing3 -->
+<!-- Start baner-3 -->
+<div class="container my-5">
+  <div class="row ">
+    <div class="col-sm-12 col-md-6 my-sm-5">
+      <img src="img/baner1.webp" class=" img-fluid" alt="">
+    </div>
+    <div class="col-sm-12 col-md-6 my-sm-5">
+      <img src="img/baner2.webp" class=" img-fluid" alt="">
+    </div>
+  </div>
+</div>
+<!-- End baner-3 -->
+<!-- Start fishing4 -->
 
+<div class="container">
+  <p class="text-center fs-1 fw-bold mb-5">پیشنهاد دیجی کالا</p>
+  
+  
+    <div class="row my-2  ">
+      
+      <div class="col-sm-12  d-flex justify-content-between my-5">
+      
+        <div class="fishing">
+          <img src="img/of1.jpg" class="img-fluid img-fluid-f" alt="">
+          <p  class="text-center m-0 ">گوشی موبایل</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of2.jpg" class="img-fluid img-fluid-f " alt="">
+          <p  class="text-start m-0 ">هدفون، هدست و ...</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of3.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">جوراب مردانه</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of4.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">کنسول خانگی</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of5.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">کفش مردانه ورزشی</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of6.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">استند و پایه خنک کننده</p>
+        </div>
+        <div class="fishing-3">
+          <img src="img/of7.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-center m-0 ">دفتر</p>
+        </div>
+        
+      </div>
+      <div class="col-sm-12  d-flex justify-content-between">
+      
+        <div class="fishing">
+          <img src="img/of8.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">کیف و کاور گوشی</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of9.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">ساعت هوشمند</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of10.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">لپ تاپ و الترابوک</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of11.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">تبلت</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of12.jpg" class="img-fluid img-fluid-f " alt="">
+          <p  class="text-start m-0 ">سرخ کن</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of13.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">مکمل دارویی</p>
+        </div>
+        <div class="fishing">
+          <img src="img/of14.jpg" class="img-fluid img-fluid-f " alt="">
+          <p class="text-start m-0 ">تجهیزات جانبی ایروبیک و ...</p>
+        </div>
+      </div> 
+    
+    </div>
+  
+  
+    
+  
+</div>
+<!-- End fishing4 -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="js/popper.min.js"></script>
-<script src="js/JQuery.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-
-
-<!-- <script src="js/bootstrap.min.js"></script> -->
-<script src="js/carousel.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>     -->
-   
-  </body>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

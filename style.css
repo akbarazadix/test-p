@@ -1,0 +1,44 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+a{
+    text-decoration: none;
+}
+
+/* start fishing */
+.img-fluid-f{
+    height: 70px;
+    width: 70px;
+}
+.fishing p{
+    /* text-align: center; */
+    margin-right: 20px;
+}
+/* end fishing */
+.p-p{
+    color: red;
+text-align: start !important;
+}
+.owl-1{
+    text-align: center;
+    
+}
+.owl-1 p{
+    color: white;
+}
+/* Start baner1 */
+  .baner-1{
+      height: 120px;
+      width: 100%;
+      background-color: azure;
+  }
+  .baner-1 img{
+      height: 80px;
+      width: 80px;
+  }
+  .img-fluid-1{
+      border: 50%;
+      
+  }
+  /* End baner1 */
